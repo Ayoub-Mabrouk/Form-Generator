@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Generator</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="form-creator">
+            <div id="heading">
+                <div id="line"></div>
+                <h1>Form Generator</h1>
+            </div>
+            <div id="content">
+                <div id="title">
+                    <p>Choose the field type:</p>
+                </div>
+                <div id="inputs">
+                    <label class="radio">
+                        <input type="radio" value="input" name="type" id="" class="radio_input">
+                        <div class="radio_radio">
+
+                        </div>
+                        <span>Input</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="radio" name="type" id="" class="radio_input">
+                        <div class="radio_radio">
+
+                        </div>
+                        <span>Radio</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="checkbox" name="type" id="" class="radio_input">
+                        <div class="radio_radio">
+
+                        </div>
+                        <span>Checkbox</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="select" name="type" id="" class="radio_input">
+                        <div class="radio_radio">
+
+                        </div>
+                        <span>Select</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="textarea" name="type" id="" class="radio_input">
+                        <div class="radio_radio">
+
+                        </div>
+                        <span>Textarea</span>
+                    </label>
+                </div>
+                <div id="choices">
+                    <div id="input-choices">
+                        <div class="contain_input">
+                            <label for="">Label</label>
+                            <input class="label_name" type="text" placeholder="Label name">
+                        </div>
+                        <div class="contain_radios">
+                            <label>Required</label>
+                            <label class="radio">
+                                <input type="radio" value="required" name="required" id="" class="radio_input required">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" value="" name="required" id="" class="radio_input">
+                                <div class="radio_radio">
+                                </div>
+                                <span>No</span>
+                            </label>
+                        </div>
+                        <div class="contain_radios">
+                            <label>Validation</label>
+
+                            <label class="radio">
+                                <input type="radio" value="Text" name="validation" id="" class="radio_input text">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Text</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" value="Number" name="validation" id="" class="radio_input number">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Number</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" value="Email" name="validation" id="" class="radio_input email">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Email</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" value="Password" name="validation" id=""
+                                    class="radio_input password">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Password</span>
+                            </label>
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Placeholder</label>
+                            <input class="placeholder" type="text" placeholder="Placeholder Value">
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Default Value</label>
+                            <input class="input_value" type="text" placeholder="Input Value">
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Maximum Characters</label>
+                            <input class="max" type="text" placeholder="Maximum Characters Value">
+                        </div>
+                    </div>
+
+                    <div id=radio-choices>
+                        <div class="contain_input">
+                            <label for="">Label</label>
+                            <input class="label_name" type="text" placeholder="Label name">
+                        </div>
+                        <div class="contain_radios">
+                            <label>Required</label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input required">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input">
+                                <div class="radio_radio">
+                                </div>
+                                <span>No</span>
+                            </label>
+                        </div>
+
+                        <div class="contain_input">
+                            <label for="">Name</label>
+                            <input class="radio_name" type="text" placeholder="Radio's Name">
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Value</label>
+                            <input class="radio_value" type="text" placeholder="Radio's Value">
+                        </div>
+                    </div>
+                    <div id=checkbox-choices>
+                        <div class="contain_input">
+                            <label for="">Label</label>
+                            <input class="label_name" type="text" placeholder="Label name">
+                        </div>
+                        <div class="contain_radios">
+                            <label>Required</label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input required">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input">
+                                <div class="radio_radio">
+                                </div>
+                                <span>No</span>
+                            </label>
+                        </div>
+
+                        <div class="contain_input">
+                            <label for="">Name</label>
+                            <input class="checkbox_name" type="text" placeholder="Checkbox's Name">
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Value</label>
+                            <input class="checkbox_value" type="text" placeholder="Checkbox's Value">
+                        </div>
+                    </div>
+                    <div id=select-choices>
+                        <div class="contain_input">
+                            <label for="">Label</label>
+                            <input class="label_name" type="text" placeholder="Label name">
+                        </div>
+                        <div class="contain_radios">
+                            <label>Required</label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input required">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input">
+                                <div class="radio_radio">
+                                </div>
+                                <span>No</span>
+                            </label>
+                        </div>
+
+
+                        <div class="contain_input">
+                            <label for="">Value</label>
+                            <input class="option" type="text" placeholder="Option's Value">
+                            <img id="add_option" src="icons/add.svg" alt="">
+                        </div>
+                    </div>
+                    <div id=textarea-choices>
+                        <div class="contain_input">
+                            <label for="">Label</label>
+                            <input class="label_name" type="text" placeholder="Label name">
+                        </div>
+                        <div class="contain_radios">
+                            <label>Required</label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input required">
+                                <div class="radio_radio">
+                                </div>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="required" id="" class="radio_input">
+                                <div class="radio_radio">
+                                </div>
+                                <span>No</span>
+                            </label>
+                        </div>
+                        <div class="contain_input">
+                            <label for="">Placeholder</label>
+                            <input class="placeholder" type="text" placeholder="Placeholder Value">
+                        </div>
+
+                        <div class="contain_input">
+                            <label for="">Name</label>
+                            <input class="textarea_name" type="text" placeholder="Textarea's Name">
+                        </div>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <img id="add" src="icons/Icon material-add-circle-outline.svg" alt="">
+                    <img id="export" src="icons/Icon awesome-file-export.svg" alt="">
+                    <a class="download"><img id="download" src="icons/Icon awesome-download.svg" alt=""></a>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div id="generated-container">
+            <div id="form">
+                <div id="generated_textarea"><label>babaak</label><textarea name="" placeholder=""></textarea></div>
+                <div id="generated_radio"><label>username</label><input type="undefined" placeholder="" id="generated_input" maxlength="" value=""></div>
+                <div id="generated_select"><lebel>food</lebel><select><option>hdkfjkldjfdkl</option></select></div>
+                <div id="generated_radio"><input type="radio" name="" value=""><label>man</label></div>
+
+            </div>
+            <div id="json-container">
+                <p>The Json File</p>
+                <p id="json_para"></p>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
